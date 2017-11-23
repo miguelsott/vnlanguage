@@ -1,0 +1,9 @@
+TITULO: "Teste Titulo"
+
+PERSONAGENS:.
+
+CENARIOS:.
+
+RECURSOS: Roberto = "teste.png".
+
+FIM
