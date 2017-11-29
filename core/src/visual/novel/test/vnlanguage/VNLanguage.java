@@ -9,7 +9,7 @@ import org.antlr.v4.runtime.CommonTokenStream;
 
 public class VNLanguage {
     
-    private final static String casoDeTeste = "C:/Users/DwarfMeDown/Documents/VisualNovelTest/core/src/visual/novel/test/vnlanguage/exemplos/semErro/casoSemErro.txt";
+    private final static String casoDeTeste = "C:/Users/Ruan/Documents/CC2/vnlanguage/core/src/visual/novel/test/vnlanguage/exemplos/semErro/casoSemErro.txt";
     
     public Jogo run() throws FileNotFoundException, IOException  {
         ANTLRInputStream input = new ANTLRInputStream(new FileInputStream(casoDeTeste));

@@ -17,23 +17,16 @@ public class InterpretadorVN extends VisualNovelBaseVisitor<Jogo>{
 
     @Override
     public Jogo visitPrograma(VisualNovelParser.ProgramaContext ctx) {
-        visitCabecalho(ctx.cabecalho());
-        visitCorpo(ctx.corpo());
         return jogo;
     }
     
     @Override
     public Jogo visitTitulo(VisualNovelParser.TituloContext ctx) {
-        String titulo = ctx.CADEIA().getText();
-        titulo = titulo.replace("\"", "");
-        Gdx.graphics.setTitle(titulo);
         return super.visitTitulo(ctx);
     }
 
     @Override
     public Jogo visitRecurso(VisualNovelParser.RecursoContext ctx) {
-        jogo.addPersonagens(new Personagem(ctx.PERSONAGEM().getText()));
-        jogo.getPersonagens().get(0).getMap().put("x", ctx.CADEIA().getText());
         return super.visitRecurso(ctx);
     }
 
